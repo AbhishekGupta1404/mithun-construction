@@ -1,0 +1,10 @@
+# GitHub Setup Commands for Mithun Construction
+
+# After creating repository on GitHub, run these commands:
+
+git remote add origin https://github.com/AbhishekGupta1404/mithun-construction.git
+git push -u origin master
+
+# If you want to use main branch instead:
+git branch -M main
+git push -u origin main
