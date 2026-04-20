@@ -55,13 +55,13 @@ export default function Footer() {
               innovative construction solutions and unwavering commitment to quality.
             </p>
             <div className="space-y-3">
-              <a href="tel:+15551234567" className="flex items-center gap-3 text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="tel:+917973725837" className="flex items-center gap-3 text-gray-400 hover:text-primary-500 transition-colors">
                 <Phone className="w-4 h-4 text-primary-500" />
-                +1 (555) 123-4567
+                +91 7973725837
               </a>
-              <a href="mailto:info@buildright.com" className="flex items-center gap-3 text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="mailto:mithungpk@gmail.com" className="flex items-center gap-3 text-gray-400 hover:text-primary-500 transition-colors">
                 <Mail className="w-4 h-4 text-primary-500" />
-                info@mithunconstruction.com
+                mithungpk@gmail.com
               </a>
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin className="w-4 h-4 text-primary-500" />

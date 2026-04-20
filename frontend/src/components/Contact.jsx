@@ -28,11 +28,14 @@ export default function Contact() {
     setError('');
 
     try {
-      // Static submission for Vercel deployment
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      setTimeout(() => setIsSubmitted(false), 5000);
+      // Send to backend API
+      const response = await axios.post('/api/contact', formData);
+      
+      if (response.status === 201) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      }
     } catch (err) {
       setError(err.response?.data?.message || 'Something went wrong. Please try again.');
     } finally {
@@ -44,14 +47,14 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      content: '+91 7973725837',
+      link: 'tel:+917973725837'
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'info@mithunconstruction.com',
-      link: 'mailto:info@mithunconstruction.com'
+      content: 'mithungpk@gmail.com',
+      link: 'mailto:mithungpk@gmail.com'
     },
     {
       icon: MapPin,
