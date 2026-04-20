@@ -61,7 +61,10 @@ export default function Hero() {
                 href="#projects"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                  const projectsSection = document.getElementById('projects');
+                  if (projectsSection) {
+                    projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
                 }}
                 className="group inline-flex items-center justify-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 xs:px-8 py-3 xs:py-4 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary-500/30 cursor-pointer text-sm xs:text-base"
               >
@@ -72,7 +75,10 @@ export default function Hero() {
                 href="#contact"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  const contactSection = document.getElementById('contact');
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
                 }}
                 className="group inline-flex items-center justify-center gap-2 border-2 border-gray-600 hover:border-primary-500 text-white px-6 xs:px-8 py-3 xs:py-4 rounded-full font-semibold transition-all hover:bg-primary-500/10 cursor-pointer text-sm xs:text-base"
               >
