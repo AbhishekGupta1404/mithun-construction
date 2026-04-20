@@ -11,10 +11,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/_/backend/api/projects', require('./routes/projects'));
-app.use('/_/backend/api/services', require('./routes/services'));
-app.use('/_/backend/api/contact', require('./routes/contact'));
-app.use('/_/backend/api/testimonials', require('./routes/testimonials'));
+app.use('/api/projects', require('./routes/projects'));
+app.use('/api/services', require('./routes/services'));
+app.use('/api/contact', require('./routes/contact'));
+app.use('/api/testimonials', require('./routes/testimonials'));
 
 app.get('/', (req, res) => {
   res.json({ message: 'Construction Website API is running!' });
