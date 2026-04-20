@@ -59,14 +59,22 @@ export default function Hero() {
             >
               <a
                 href="#projects"
-                className="group inline-flex items-center justify-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary-500/30"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="group inline-flex items-center justify-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary-500/30 cursor-pointer"
               >
                 View Our Projects
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#contact"
-                className="group inline-flex items-center justify-center gap-2 border-2 border-gray-600 hover:border-primary-500 text-white px-8 py-4 rounded-full font-semibold transition-all hover:bg-primary-500/10"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="group inline-flex items-center justify-center gap-2 border-2 border-gray-600 hover:border-primary-500 text-white px-8 py-4 rounded-full font-semibold transition-all hover:bg-primary-500/10 cursor-pointer"
               >
                 <Phone className="w-5 h-5" />
                 Contact Us
