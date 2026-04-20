@@ -151,10 +151,10 @@ export default function Services() {
           <span className="inline-block bg-primary-500/20 text-primary-400 px-4 py-2 rounded-full text-sm font-medium mb-4">
             What We Do
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             Our <span className="text-gradient">Services</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-400 max-w-2xl mx-auto text-sm xs:text-base md:text-lg">
             From concept to completion, we offer comprehensive construction services 
             tailored to meet your unique needs and exceed your expectations.
           </p>
@@ -170,7 +170,7 @@ export default function Services() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 xs:gap-6"
           >
             {services.map((service) => {
               const IconComponent = iconMap[service.icon] || Building2;

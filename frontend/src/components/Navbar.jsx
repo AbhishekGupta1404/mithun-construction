@@ -37,8 +37,8 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <HardHat className="w-8 h-8 text-primary-500" />
-            <span className="text-xl font-bold text-white">
+            <HardHat className="w-6 h-6 xs:w-7 xs:h-7 sm:w-8 sm:h-8 text-primary-500" />
+            <span className="text-lg xs:text-xl font-bold text-white">
               Mithun <span className="text-primary-500">Construction</span>
             </span>
           </motion.a>
@@ -72,11 +72,11 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white p-3 touch-manipulation"
+            className="md:hidden text-white p-2 xs:p-3 touch-manipulation"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-5 h-5 xs:w-6 xs:h-6" /> : <Menu className="w-5 h-5 xs:w-6 xs:h-6" />}
           </button>
         </div>
       </div>

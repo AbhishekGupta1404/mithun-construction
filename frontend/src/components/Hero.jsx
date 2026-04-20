@@ -31,7 +31,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+              className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 xs:mb-6"
             >
               Constructing{' '}
               <span className="text-gradient">Excellence</span>
@@ -44,7 +44,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-gray-400 text-lg mb-8 max-w-xl mx-auto lg:mx-0"
+              className="text-gray-400 text-sm xs:text-base md:text-lg mb-6 xs:mb-8 max-w-lg mx-auto lg:mx-0 lg:max-w-xl"
             >
               With over 25 years of experience, we deliver world-class construction 
               solutions that transform visions into reality. From commercial skyscrapers 
@@ -55,7 +55,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="flex flex-col xs:flex-row gap-3 xs:gap-4 justify-center lg:justify-start"
             >
               <a
                 href="#projects"
@@ -63,10 +63,10 @@ export default function Hero() {
                   e.preventDefault();
                   document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="group inline-flex items-center justify-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary-500/30 cursor-pointer"
+                className="group inline-flex items-center justify-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 xs:px-8 py-3 xs:py-4 rounded-full font-semibold transition-all hover:shadow-lg hover:shadow-primary-500/30 cursor-pointer text-sm xs:text-base"
               >
                 View Our Projects
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 xs:w-5 xs:h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
                 href="#contact"
@@ -74,9 +74,9 @@ export default function Hero() {
                   e.preventDefault();
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="group inline-flex items-center justify-center gap-2 border-2 border-gray-600 hover:border-primary-500 text-white px-8 py-4 rounded-full font-semibold transition-all hover:bg-primary-500/10 cursor-pointer"
+                className="group inline-flex items-center justify-center gap-2 border-2 border-gray-600 hover:border-primary-500 text-white px-6 xs:px-8 py-3 xs:py-4 rounded-full font-semibold transition-all hover:bg-primary-500/10 cursor-pointer text-sm xs:text-base"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-4 h-4 xs:w-5 xs:h-5" />
                 Contact Us
               </a>
             </motion.div>
@@ -86,19 +86,19 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-800"
+              className="grid grid-cols-3 gap-4 xs:gap-6 mt-8 xs:mt-12 pt-6 xs:pt-8 border-t border-gray-800"
             >
-              <div>
-                <div className="text-3xl sm:text-4xl font-bold text-gradient">500+</div>
-                <div className="text-gray-400 text-sm mt-1">Projects Completed</div>
+              <div className="text-center xs:text-left">
+                <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-gradient">500+</div>
+                <div className="text-gray-400 text-xs xs:text-sm mt-1">Projects Completed</div>
               </div>
-              <div>
-                <div className="text-3xl sm:text-4xl font-bold text-gradient">25+</div>
-                <div className="text-gray-400 text-sm mt-1">Years Experience</div>
+              <div className="text-center xs:text-left">
+                <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-gradient">25+</div>
+                <div className="text-gray-400 text-xs xs:text-sm mt-1">Years Experience</div>
               </div>
-              <div>
-                <div className="text-3xl sm:text-4xl font-bold text-gradient">100%</div>
-                <div className="text-gray-400 text-sm mt-1">Client Satisfaction</div>
+              <div className="text-center xs:text-left">
+                <div className="text-2xl xs:text-3xl sm:text-4xl font-bold text-gradient">100%</div>
+                <div className="text-gray-400 text-xs xs:text-sm mt-1">Client Satisfaction</div>
               </div>
             </motion.div>
           </div>
