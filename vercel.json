@@ -28,7 +28,11 @@
       "dest": "/frontend/index.html"
     },
     {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|json|map)$)",
+      "src": "/favicon.(.*)",
+      "dest": "/frontend/favicon.$1"
+    },
+    {
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|json|map|avif|webp))",
       "dest": "/frontend/$1"
     },
     {
