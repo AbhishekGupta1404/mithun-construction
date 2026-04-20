@@ -15,7 +15,7 @@ export default function Projects() {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/projects');
+      const response = await axios.get('/_/backend/api/projects');
       setProjects(response.data);
     } catch (error) {
       console.error('Error fetching projects:', error);

@@ -28,7 +28,7 @@ export default function Contact() {
     setError('');
 
     try {
-      await axios.post('http://localhost:5000/api/contact', formData);
+      await axios.post('/_/backend/api/contact', formData);
       setIsSubmitted(true);
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
       setTimeout(() => setIsSubmitted(false), 5000);
