@@ -28,7 +28,8 @@ export default function Contact() {
     setError('');
 
     try {
-      await axios.post('/_/backend/api/contact', formData);
+      // Static submission for Vercel deployment
+      await new Promise(resolve => setTimeout(resolve, 1000));
       setIsSubmitted(true);
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
       setTimeout(() => setIsSubmitted(false), 5000);
